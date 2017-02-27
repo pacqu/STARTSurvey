@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="container">
+  <h1>START Survery Results</h1>
+  <div id="pop" style="display: none;">{{pop}}</div>
+  <div id="loc" style="display: none;">{{loc}}</div>
+  <div id="spec" style="display: none;">{{spec}}</div>
+  <h2> You Were Loking For: </h2>
+  <h5> {{pop}} Schools in a(n) {{loc}} Setting, Specializing in the {{spec}} Field</h5>
+  <table class="u-full-width">
+  <thead>
+    <tr>
+      <th>College Name</th>
+      <th>Location</th>
+      <th>Student Population</th>
+      <th>Specialization</th>
+      <th>Reasons Why Matched</th>
+      <th>Info</th>
+    </tr>
+  </thead>
+  <tbody id="colleges">
+  </tbody>
+  </table>
+   <a href="/"> <button class="button-primary">START Again</button> </a>
+</div>
+
+
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/postquiz.js"></script>
+{% endblock %}  
