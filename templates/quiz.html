@@ -1,0 +1,46 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="container">
+  <h1>START Survery</h1>
+  <form method="POST">
+  <div class="row">
+    
+    <div class="four columns">Location:</div>
+    <div clas="eight columns">
+      <select name="location">
+	<option value="urban">Urban</option>
+	<option value="suburban">Suburban</option>
+	<option value="rural">Rural</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="four columns">Student Population:</div>
+    <div clas="eight columns">
+      <select name="pop">
+	<option value="small">Small-Sized Population</option>
+	<option value="medium">Medium-Sized Population</option>
+	<option value="large">Large-Sized Population</option>
+      </select>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="four columns">Specialization:</div>
+    <div clas="eight columns">
+      <select name="spec">
+	<option value="stem">STEM</option>
+	<option value="humanities">Humanities</option>
+	<option value="bus">Business</option>
+	<option value="med">Medical</option>
+	<option value="law">Law</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <input class="button-primary" type="submit" value="submit">
+  </div>
+</div>
+{% endblock %}
