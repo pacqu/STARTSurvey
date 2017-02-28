@@ -1,12 +1,13 @@
 {% extends "template.html" %}
+{% block title %}START Survey{% endblock %}
 {% block content %}
 <div class="container">
-  <h1>START Survery</h1>
+  <h1>START Survey</h1>
   <form method="POST">
   <div class="row">
     
-    <div class="four columns">Location:</div>
-    <div clas="eight columns">
+    <div class="four columns" style="text-align:justify">Location:</div>
+    <div class="eight columns" style="text-align:justify">
       <select name="location">
 	<option value="Urban">Urban</option>
 	<option value="Suburban">Suburban</option>
@@ -16,8 +17,8 @@
   </div>
   
   <div class="row">
-    <div class="four columns">Student Population:</div>
-    <div clas="eight columns">
+    <div class="four columns" style="text-align:justify">Student Population:</div>
+    <div class="eight columns" style="text-align:justify">
       <select name="pop">
 	<option value="Small">Small-Sized Population</option>
 	<option value="Medium">Medium-Sized Population</option>
@@ -27,8 +28,8 @@
   </div>
  
   <div class="row">
-    <div class="four columns">Specialization:</div>
-    <div clas="eight columns">
+    <div class="four columns" style="text-align:justify">Specialization:</div>
+    <div class="eight columns" style="text-align:justify">
       <select name="spec">
 	<option value="STEM">STEM</option>
 	<option value="Humanities">Humanities</option>

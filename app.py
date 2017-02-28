@@ -29,4 +29,4 @@ def retgen(loc,pop,spec):
 if __name__ == '__main__':
      #retgen('rural','large','med')
      app.debug = True
-     app.run(host='localhost',port=5000)
+     app.run(host=os.getenv('IP', '0.0.0.0'),port=int(os.getenv('PORT', 8080)))
