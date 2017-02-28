@@ -1,0 +1,46 @@
+body {
+     background-color:#E3EFFF;
+     text-align:center;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 20px;
+     color: #020407;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3{
+   font-family: 'Quicksand', sans-serif; 
+}
+.section {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    text-align: left;
+    background-color: #5F89C2;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #425978;
+    min-width: 160px;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#clothchoices{
+    padding-top: 50px;
+}
